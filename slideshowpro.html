@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="manc.css">
+<title>Image Slider</title>
+</head>
+<body>
+<div class="slider-container">
+<div class="slider">
+<div class="slide active" style="background-image: url('machu1.jpeg.jpg');">
+<div class="caption">Mountain of Snow View</div>
+</div>
+<div class="slide" style="background-image: url('machu2.jpeg.jpg');">
+<div class="caption">Mountain of Snow View</div>
+</div>
+<div class="slide" style="background-image: url('machu3.jpeg.jpg');">
+<div class="caption">Mountain of Snow View</div>
+</div>
+</div>
+<button class="nav prev" onclick="changeSlide(-1)">&#10094;</button>
+<button class="nav next" onclick="changeSlide(1)">&#10095;</button>
+<div class="thumbnails">
+<img src="machu1.jpeg.jpg" onclick="currentSlide(1)">
+<img src="machu2.jpeg.jpg" onclick="currentSlide(2)">
+<img src="machu3.jpeg.jpg" onclick="currentSlide(3)">
+</div>
+</div>
+<script src="manc.js"></script>
+</body>
+</html>
